@@ -25,16 +25,16 @@
     </div>
     <script>
     function revealName(){
-      alert('This Worked!");
-  var req = new XMLHttpRequest();
-  req.onreadystatechange = funtion() {
-    if(this.readyState == 4 && this.status == 200){
-      document.getElementById("name").innerHTML =
-      this.responseText;
+      var mRequest = new XMLHttpRequest();
+      mRequest.onreadystatechange = funtion() {
+        this.responseText;
+        alert(mRequest.onreadystatechange);
+        alert(mRequest.readyState);
+        alert(mRequest.status);
     }
   }
-  req.open("GET","name.txt",true);
-  req.send(); }
+      mRequest.open("GET","name.txt",true);
+      mRequest.send(); }
     </script>
 
     <!-- Optional JavaScript -->
