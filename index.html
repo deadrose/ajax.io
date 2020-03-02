@@ -20,11 +20,12 @@
         <h1 class="display-4">My Name is <span id="name">????</span></h1>
         <hr class="my-4">
         <p>Click the button below to find out what my name is!</p>
-        <button type="button" class="btn btn-outline-primary btn-lg" onclick=loadDoc()>Reveal Name</button>
+        <button type="button" class="btn btn-outline-primary btn-lg" onclick="revealName()">Reveal Name</button>
       </div>
     </div>
     <script>
-    function loadDoc(){
+    function revealName(){
+      alert('This Worked!");
   var req = new XMLHttpRequest();
   req.onreadystatechange = funtion() {
     if(this.readyState == 4 && this.status == 200){
