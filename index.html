@@ -27,10 +27,9 @@
     function revealName(){
       var mRequest = new XMLHttpRequest();
       mRequest.onreadystatechange = function() {
-        this.responseText;
-        alert(mRequest.onreadystatechange);
-        alert(mRequest.readyState);
-        alert(mRequest.status);
+        if(mRequest.readtState == 4 && mRequest.status == 200) {
+           document.getElementById("name").innerHTML = this.responseText:
+        }     
       }
       mRequest.open("GET","name.txt",true);
       mRequest.send(); 
