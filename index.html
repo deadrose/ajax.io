@@ -28,7 +28,7 @@
       var mRequest = new XMLHttpRequest();
       mRequest.onreadystatechange = function() {
         if(mRequest.readtState == 4 && mRequest.status == 200) {
-           document.getElementById("name").innerHTML = this.responseText:
+           document.getElementById("name").innerHTML = this.responseText;
         }     
       }
       mRequest.open("GET","name.txt",true);
