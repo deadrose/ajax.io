@@ -29,11 +29,11 @@
       mRequest.onreadystatechange = function() {
         if(mRequest.readtState == 4 && mRequest.status == 200) {
            var nameObj = this.responseText;
-           console.log(nameObj.firstName);
+           console.log(nameObj);
            nameObj = JSON.parse(nameObj);
            console.log(nameObj.lastName); 
            document.getElementById("name").innerHTML = nameObj.firstName + " " + nameObj.lastName;
-           document.getElementById("info").innerHTML = "I am " nameObj.age + " and I am a " + nameObj.role;
+           document.getElementById("info").innerHTML = "I am " + nameObj.age + " and I am a " + nameObj.role;
         }     
       }
       mRequest.open("GET","name.json",true);
