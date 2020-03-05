@@ -31,7 +31,7 @@
            var nameObj = this.responseText;
            nameObj = JSON.parse(nameObj);
            console.log(nameObj.lastName) 
-           document.getElementById("name").innerHTML = this.responseText;
+           //document.getElementById("name").innerHTML = this.responseText;
         }     
       }
       mRequest.open("GET","name.json",true);
